@@ -58,7 +58,6 @@ MAX_DIGITS = 17
       
       number/closest == 1 && number%closest == 0 
     end
-    
   end
 end
 
@@ -141,7 +140,7 @@ class LuckyTable
     
     private
     
-    # returns table for [0;number) where number is power of ten
+    # returns table for [0;number) where number must be power of ten
     # also caches tables for [0;k*10**n) intervals
     # where k is in [0;0] and n is log10(number) - 1
     def for_power_of_ten(number)
