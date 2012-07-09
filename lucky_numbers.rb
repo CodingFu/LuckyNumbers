@@ -61,13 +61,17 @@ MAX_DIGITS = 17
   end
 end
 
-################################################
-# LuckyTable class                             #
-#                                              #
-# Stores count of occurances for each pair of  #
-# sum of digits and sum of squared digits      #
-# for all the integers in given interval.      #
-################################################
+#######################################################
+# LuckyTable class                                    #
+#                                                     #
+# Stores count of occurances for each pair of         #
+# sum of digits and sum of squared digits             #
+# for all the integers in given interval.             #
+#                                                     #
+# Usage:                                              #
+# lucky_table[squared_digits_sum][digits_sum] = count #
+#                                                     #
+#######################################################
 class LuckyTable
   def initialize(data={})
     @data = data
