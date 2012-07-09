@@ -81,13 +81,17 @@ PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53,
   end
 end
 
-################################################
-# LuckyTable class                             #
-#                                              #
-# Stores count of occurances for each pair of  #
-# sum of digits and sum of squared digits      #
-# for all the integers in given interval.      #
-################################################
+###########################################################################
+# LuckyTable class                                                        #
+#                                                                         #
+# Stores count of occurances for each pair of                             #
+# sum of digits and sum of squared digits                                 #
+# for all the integers in given interval.                                 #
+#                                                                         #
+# Usage:                                                                  #
+# lucky_table[sum_of_squared_digits][sum_of_digits] = count_of_occurances #
+#                                                                         #
+###########################################################################
 class LuckyTable
   def initialize(data={})
     @data = data
