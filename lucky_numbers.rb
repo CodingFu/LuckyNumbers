@@ -55,7 +55,6 @@ end
 
 # Lucky table stores data in format table[squared_digits_sum][digits_sum] = numbers count
 class LuckyTable
-  attr_accessor :data
   
   def initialize(data={})
     @data = data
@@ -146,13 +145,13 @@ class LuckyTable
   end
   
   def [](squared_sum)
-    data[squared_sum] ||= Hash.new(0)
-    data[squared_sum]
+    @data[squared_sum] ||= Hash.new(0)
+    @data[squared_sum]
   end
   
   def []=(squared_sum, val)
-    data[squared_sum] ||= Hash.new(0)
-    data[squared_sum] = val
+    @data[squared_sum] ||= Hash.new(0)
+    @data[squared_sum] = val
   end
   
 end
